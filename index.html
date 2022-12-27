@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
+    <<!--meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
     <title>BaseballRegister</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
-      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 100%; height: 100%"></canvas>
+      <canvas id="unity-canvas" width=1080 height=1920 style="width: 100%; height: 100%"></canvas>
     </div>
     <div id="loading-cover" style="display:none;">
       <div id="unity-loading-bar">
@@ -20,16 +20,16 @@
         </div>
         <div class="spinner"></div>
       </div>
-    </div> 
+    </div>
     <div id="unity-fullscreen-button" style="display: none;"></div>
     <script>
       const hideFullScreenButton = "0";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/Web_NoChange.loader.js";
+      const loaderUrl = buildUrl + "/Web.loader.js";
       const config = {
-        dataUrl: buildUrl + "/Web_NoChange.data.unityweb",
-        frameworkUrl: buildUrl + "/Web_NoChange.framework.js.unityweb",
-        codeUrl: buildUrl + "/Web_NoChange.wasm.unityweb",
+        dataUrl: buildUrl + "/Web.data.unityweb",
+        frameworkUrl: buildUrl + "/Web.framework.js.unityweb",
+        codeUrl: buildUrl + "/Web.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Shining",
         productName: "BaseballRegister",
